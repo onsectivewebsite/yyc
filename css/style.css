@@ -399,6 +399,7 @@ ul { list-style: none; }
 .hero {
     position: relative;
     height: 100vh;
+    height: 100dvh;
     min-height: 700px;
     display: flex;
     align-items: center;
@@ -1850,14 +1851,17 @@ ul { list-style: none; }
     .nav-cta { display: none; }
     .hamburger { display: flex; z-index: 1002; }
 
-    .hero { min-height: 600px; }
-    .hero h1 { font-size: 2.4rem; }
-    .hero-subtitle { font-size: 1rem; }
-    .hero-content { padding-top: 60px; }
-    .hero-badge { font-size: 0.7rem; letter-spacing: 1.5px; padding: 6px 18px; }
-    .hero-stats { flex-direction: column; gap: 20px; align-items: flex-start; }
-    .stat-number { font-size: 2.2rem; }
-    .stat-divider { width: 50px; height: 1px; }
+    .hero { min-height: auto; height: auto; padding: 120px 0 60px; }
+    .hero h1 { font-size: 2rem; max-width: 100%; }
+    .hero-subtitle { font-size: 0.95rem; max-width: 100%; margin-bottom: 28px; }
+    .hero-content { padding-top: 0; }
+    .hero-cta { margin-bottom: 36px; }
+    .hero-stats { flex-direction: row; flex-wrap: wrap; gap: 20px; align-items: flex-start; }
+    .stat-number { font-size: 2rem; }
+    .stat-suffix { font-size: 1.4rem; }
+    .stat-label { font-size: 0.7rem; letter-spacing: 1px; }
+    .stat-divider { display: none; }
+    .stat-item { min-width: calc(50% - 20px); }
     .slider-controls { display: none; }
     .hero-scroll { display: none; }
 
@@ -1910,9 +1914,11 @@ ul { list-style: none; }
 
 @media (max-width: 480px) {
     .section { padding: 60px 0; }
-    .hero h1 { font-size: 1.8rem; }
-    .hero-badge { font-size: 0.65rem; padding: 6px 14px; letter-spacing: 1px; }
-    .hero-subtitle { font-size: 0.9rem; margin-bottom: 28px; }
+    .hero h1 { font-size: 1.6rem; }
+    .hero-subtitle { font-size: 0.85rem; margin-bottom: 24px; }
+    .hero-stats { gap: 16px; }
+    .stat-number { font-size: 1.8rem; }
+    .stat-item { min-width: calc(50% - 16px); }
     .btn { padding: 12px 24px; font-size: 0.8rem; }
     .section-title { font-size: 1.6rem; }
     .about-content .section-title { font-size: 1.6rem; }
