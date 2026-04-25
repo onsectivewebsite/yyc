@@ -686,35 +686,6 @@ ul { list-style: none; }
     object-fit: cover;
 }
 
-.about-experience-badge {
-    position: absolute;
-    top: -20px;
-    right: 40px;
-    background: var(--accent);
-    color: var(--dark);
-    padding: 24px;
-    border-radius: var(--radius);
-    text-align: center;
-    box-shadow: var(--shadow-accent);
-}
-
-.exp-number {
-    display: block;
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.exp-text {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 4px;
-}
-
 .about-content .section-title {
     font-size: 2.6rem;
 }
@@ -1881,8 +1852,6 @@ img, video, iframe { max-width: 100%; }
 
     .about-images { padding-bottom: 20px; margin-bottom: 10px; }
     .about-img-accent { display: none; }
-    .about-experience-badge { position: relative; top: auto; bottom: auto; right: auto; margin-top: -30px; margin-left: auto; margin-right: 20px; width: fit-content; padding: 14px 18px; z-index: 2; }
-    .about-experience-badge .exp-number { font-size: 1.6rem; }
     .about-img-main img { height: 280px; }
 
     .section-title { font-size: 1.8rem; word-wrap: break-word; }
@@ -1967,9 +1936,6 @@ img, video, iframe { max-width: 100%; }
     .process-number { width: 72px; height: 72px; font-size: 1.4rem; }
 
     .about-img-main img { height: 220px; }
-    .about-experience-badge { padding: 12px; }
-    .about-experience-badge .exp-number { font-size: 1.4rem; }
-    .about-experience-badge .exp-text { font-size: 0.65rem; }
 
     .about-feature { gap: 12px; }
     .feature-icon { width: 44px; height: 44px; font-size: 1rem; }
